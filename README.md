@@ -49,7 +49,7 @@ admin.site.register(food)
 ````
 ## OUTPUT
 
-Include the screenshot of your admin page.
+<img width="1853" height="851" alt="image" src="https://github.com/user-attachments/assets/d9bc25c2-4119-4e86-9025-843a68d57e39" />
 
 
 ## RESULT
