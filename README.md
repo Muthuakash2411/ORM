@@ -1,5 +1,5 @@
 # Ex01 Django ORM Web Application
-## Date: 
+## Date: 14-05-2026
 
 ## AIM
 To develop a Django application to manage an online food delivery platform like Zomato/Swiggy using Object Relational Mapping (ORM).
@@ -24,9 +24,29 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 
-### Devolped by
+# Models.py
+````
+from django.db import models
 
+# Create your models here.
+class food(models.Model):
+    orderid=models.IntegerField(primary_key=True)
+    Itemname=models.CharField(max_length=20)
+    OrderQty=models.IntegerField()
+    TotalAmount=models.FloatField()
+    Delivery_Address=models.CharField(max_length=100)
+````
 
+## Admin.py
+````
+from django.contrib import admin
+from .models import food
+# Register your models here.
+class foodAdmin(admin.ModelAdmin):
+    list_display=('orderid','Itemname','OrderQty','TotalAmount','Delivery_Address')
+admin.site.register(food)
+
+````
 ## OUTPUT
 
 Include the screenshot of your admin page.
