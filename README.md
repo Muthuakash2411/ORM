@@ -25,7 +25,7 @@ Execute Django admin and create details for 10 books
 ## PROGRAM
 
 # Models.py
-````
+````python
 from django.db import models
 
 # Create your models here.
@@ -38,7 +38,7 @@ class food(models.Model):
 ````
 
 ## Admin.py
-````
+````python
 from django.contrib import admin
 from .models import food
 # Register your models here.
